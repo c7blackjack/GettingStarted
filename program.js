@@ -8,6 +8,8 @@ var die = {
   }
 }
 
-console.log(die.size);
-
-console.log(die.roll());
+die.size = 10;
+for(var i =0; i < 10; i++){
+  console.log(die.roll());
+  die.count++;
+}
