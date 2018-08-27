@@ -1,15 +1,11 @@
+var dice = require("./dice.js");
+var die = dice.die;
 
-var die = {
-  size : 6,
-  count: 1,
-  roll: function(){
-    var dieRoll = Math.ceil(die.size * Math.random());
-    return dieRoll;
-  }
-}
+console.log(die);
+//die.size = 10;
 
-die.size = 10;
-for(var i =0; i < 10; i++){
+for(var i =1; i < 10; i++){
   console.log(die.roll());
   die.count++;
 }
+ console.log("You rolled " + die.count + " times!")
